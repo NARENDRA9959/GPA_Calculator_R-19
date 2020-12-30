@@ -13,6 +13,7 @@
     <div class="col-md-12">
         <div class="text-center">
             <h1>GPA CALCULATOR - R19 REGULATION</h1>
+            <p><b>Note : </b>If you have only four labs please leave the Lab 5 field as it is.</p>
         </div>
     </div>
     <div class="col-md-2 mx-auto mt-5">
@@ -213,16 +214,6 @@
             {
                 var gpa=parseFloat(((sub1+sub3)*3+(sub2+sub4)*4+sub5*2+(lab1+lab2+lab3)*1.5+(lab4)*1)/21.5).toFixed(2);
             }
-            
-            // if(document.getElementById('lab4').value != -1)
-            // {
-            //     var gpa=parseFloat((((sub1+sub2+sub3+sub4+sub5)*3)+((lab1+lab2+lab3+lab4)*2))/ci);
-            // }
-            // if(document.getElementById('lab5').value != -1)
-            // {
-            //     var gpa=parseFloat((((sub1+sub2+sub3+sub4+sub5)*3)+((lab1+lab2+lab3+lab4+lab5)*2))/ci);
-
-            // }
             alert("Your GPA is : "+gpa);
 
 
