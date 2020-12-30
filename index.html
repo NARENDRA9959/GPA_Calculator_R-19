@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA CALCULATOR - R19 REGULATION</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="col-md-12">
+        <div class="text-center">
+            <h1>GPA CALCULATOR - R19 REGULATION</h1>
+        </div>
+    </div>
+    <div class="col-md-2 mx-auto mt-5">
+        <form action="">
+
+            <div class="form-group mx-auto">
+                <select class="form-control" id="branch">
+                  <option value=-1 selected>BRANCH</option>
+                  <option value="cse">CSE</option>
+                  <option value="ece">ECE</option>
+                  <option value="eee">EEE</option>
+                  <option value="mech">MECH</option>
+                  <option value="civil">CIVIL</option>
+                </select>
+              </div>
+
+            <div class="form-group m-auto">
+                <select class="form-control" id="sub1">
+                  <option value=-1 selected>Subject 1 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+    
+    
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="sub2">
+                  <option value=-1 selected>Subject 2 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="sub3">
+                  <option value=-1 selected>Subject 3 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="sub4">
+                  <option value=-1 selected>Subject 4 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="sub5">
+                  <option value=-1 selected>Subject 5 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="lab1">
+                  <option value=-1 selected>Lab 1 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="lab2">
+                  <option value=-1 selected>Lab 2 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="lab3">
+                  <option value=-1 selected>Lab 3 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="lab4">
+                  <option value=-1 selected>Lab 4 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <div class="form-group mx-auto mt-4">
+                <select class="form-control" id="lab5">
+                  <option value=-1 selected>Lab 5 Grade</option>
+                  <option value=10>S</option>
+                  <option value=9>A</option>
+                  <option value=8>B</option>
+                  <option value=7>C</option>
+                  <option value=6>D</option>
+                  <option value=5>E</option>
+                  <option value=0>Fail</option>
+                  <option value=0>Absent</option>
+                </select>
+              </div>
+
+              <button type="submit" onclick="calculate()" class="btn btn-success mx-auto mb-5">Calculate</button>
+        </form>
+    </div>
+    <script>
+        function calculate()
+        {
+            var branch=document.getElementById('branch').value;
+            var sub1=parseInt(document.getElementById('sub1').value);
+            var sub2=parseInt(document.getElementById('sub2').value);
+            var sub3=parseInt(document.getElementById('sub3').value);
+            var sub4=parseInt(document.getElementById('sub4').value);
+            var sub5=parseInt(document.getElementById('sub5').value);
+            var lab1=parseInt(document.getElementById('lab1').value);
+            var lab2=parseInt(document.getElementById('lab2').value);
+            var lab3=parseInt(document.getElementById('lab3').value);
+            if(document.getElementById('lab4').value != -1)
+            {
+                var lab4=parseInt(document.getElementById('lab4').value);
+            }
+            if(document.getElementById('lab5').value != -1)
+            {
+                var lab5=parseInt(document.getElementById('lab5').value);
+
+            }
+
+            if (branch=="cse")
+            {
+                var gpa=parseFloat(((sub1+sub3+sub4)*3+sub2*4+sub5*2+(lab1+lab2+lab3)*1.5+(lab4+lab5)*1)/21.5).toFixed(2);
+            }
+            else if (branch=="civil")
+            {
+                var gpa=parseFloat(((sub1+sub3)*3+(sub2+sub4)*4+sub5*2+(lab1+lab2+lab3)*1.5+(lab4)*1)/21.5).toFixed(2);
+            }
+            else if (branch=="eee" || branch=="ece")
+            {
+                var gpa=parseFloat(((sub2+sub3+sub4)*3+(sub1)*4+sub5*2.5+(lab1+lab2+lab3+lab4)*1.5)/21.5).toFixed(2);
+            }
+            else if (branch=="mech")
+            {
+                var gpa=parseFloat(((sub1+sub3)*3+(sub2+sub4)*4+sub5*2+(lab1+lab2+lab3)*1.5+(lab4)*1)/21.5).toFixed(2);
+            }
+            
+            // if(document.getElementById('lab4').value != -1)
+            // {
+            //     var gpa=parseFloat((((sub1+sub2+sub3+sub4+sub5)*3)+((lab1+lab2+lab3+lab4)*2))/ci);
+            // }
+            // if(document.getElementById('lab5').value != -1)
+            // {
+            //     var gpa=parseFloat((((sub1+sub2+sub3+sub4+sub5)*3)+((lab1+lab2+lab3+lab4+lab5)*2))/ci);
+
+            // }
+            alert("Your GPA is : "+gpa);
+
+
+        }
+    </script>
+</body>
+</html>
